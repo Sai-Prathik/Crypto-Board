@@ -1,0 +1,23 @@
+ 
+
+.car-div{  
+
+    top:0;
+    left: 0;
+    width: 100%;
+    min-height: 25vw; 
+    background-repeat: no-repeat; 
+    justify-content: center;
+    align-items: center;
+    display: flex; 
+    flex-direction: column;
+    background-image: url("../Assets/bg3.jpg");
+    background-position: center;
+    box-shadow:0 0 10px inset black;
+    background-size: 100%;  
+}
+
+ 
+
+
+

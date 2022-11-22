@@ -1,0 +1,23 @@
+
+
+.car-wrap{ 
+    display: flex; 
+    max-width: 90% ;
+   min-width: 90% ; 
+
+}
+
+
+.slide {      
+   
+   padding: 10px;  
+    display: flex;    
+    overflow: scroll; 
+    scroll-behavior: smooth;
+} ::-webkit-scrollbar{ 
+}
+
+.dir-btn{  
+    border-radius: 5px;
+
+}
