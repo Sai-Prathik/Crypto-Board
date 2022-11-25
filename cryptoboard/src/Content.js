@@ -24,7 +24,7 @@ const  Content = () => {
       <Router>
         <Routes>
 
-    <Route path='/' element={
+    <Route path='/Crypto-Board' element={
       <>
       <Carousel/>
       <CoinsTable/>
