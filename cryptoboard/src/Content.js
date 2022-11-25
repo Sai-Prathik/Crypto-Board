@@ -15,7 +15,7 @@ import CoinPage from "./CoinPage";
 
 
 
-const Content = () => { 
+const  Content = () => { 
 
 
 

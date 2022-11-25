@@ -17,3 +17,6 @@ export const searchCoins = (query) =>
 
 export const get_price = (ids,currency)=>
   `https://api.coingecko.com/api/v3/coins/markets?vs_currency=${currency}&ids=${ids}&order=market_cap_desc&per_page=100&page=1&sparkline=false`;
+
+export const klines = (coin,curr,days)=>
+  `https://api.coingecko.com/api/v3/coins/${coin}/ohlc?vs_currency=${curr}&days=${days}`

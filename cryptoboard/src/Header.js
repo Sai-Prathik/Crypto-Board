@@ -4,6 +4,7 @@ import {AppBar,Container, ListItem, MenuItem, Select, Toolbar,Typography} from "
 import { makeStyles } from '@material-ui/core'; 
 import SearchBar from './SearchBar';
 import man from "./Assets/man.png";
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     
@@ -37,7 +38,7 @@ const Header = () => {
         
         <Toolbar className={classes.Nav}>
             
-            <Typography className={classes.Title}>CryptoBoard</Typography>  
+            <Typography className={classes.Title}>CryptoBoard</Typography>
              
             <img src={man} className={classes.Logo}/>
 

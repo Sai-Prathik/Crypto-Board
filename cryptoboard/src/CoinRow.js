@@ -3,13 +3,15 @@ import "./Styles/CoinsTable.css";
 import {Line} from "react-chartjs-2";
 import { HistoricalWeekChart } from './Config/API';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 function CoinRow(props) {
     var coinData = props.data; 
 
     const [weekHistory,setWeekData] = useState({});
     const [data,setData] = useState({});
-
+    
+    
     function customizeData(data){
         let prices = [];
         let ind = [];
@@ -26,8 +28,9 @@ function CoinRow(props) {
     }
 
      
-
+    
   return ( 
+    <Link to={`/coin/${coinData.symbol.toUpperCase()}`}> 
     <div className='coin-item-wrp' key={coinData.index}>
     <div className='flex'>
 
@@ -38,13 +41,14 @@ function CoinRow(props) {
      </div>  
      
     <div className='details'>
-      <div>{coinData.current_price}</div>
-      <div>{coinData.price_change_percentage_24h}%</div>
+      <div>{"$ "+coinData.current_price.toFixed(2)}</div>
+      <div>{coinData.price_change_percentage_24h.toFixed(3)}%</div>
       <div>{coinData.market_cap}</div>
     </div>
     
     </div>
-  </div>
+  </div> 
+  </Link>
   )
 }
 

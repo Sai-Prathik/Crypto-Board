@@ -31,7 +31,7 @@ function CoinCard(props) {
 
   <div id="CoinTitle" className='title'>{props.obj.name}</div> 
  <div  className="flex-display "> 
-   <div className='perchng' style={get_status()}>{props.obj.price_change_percentage_24h}%</div>
+   <div className='perchng' style={get_status()}>{props.obj.price_change_percentage_24h.toFixed(3)}%</div>
    </div>
   </div> 
   ) 
