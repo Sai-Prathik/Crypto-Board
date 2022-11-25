@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Crypto-Board/static/css/main.a518c2ef.css",
-    "main.js": "/Crypto-Board/static/js/main.d83a8ab0.js",
+    "main.css": "/Crypto-Board/static/css/main.a00c571d.css",
+    "main.js": "/Crypto-Board/static/js/main.810f9946.js",
     "static/js/787.a70fc898.chunk.js": "/Crypto-Board/static/js/787.a70fc898.chunk.js",
     "static/media/bg3.jpg": "/Crypto-Board/static/media/bg3.9cddf37b53f8d029f398.jpg",
     "static/media/CBLogo.png": "/Crypto-Board/static/media/CBLogo.e9e90c70f8828f94fafd.png",
     "static/media/man.png": "/Crypto-Board/static/media/man.7592b515db23ff41b4dc.png",
     "static/media/left_arrow.svg": "/Crypto-Board/static/media/left_arrow.69567b5249b3151e6f527af122c07019.svg",
     "index.html": "/Crypto-Board/index.html",
-    "main.a518c2ef.css.map": "/Crypto-Board/static/css/main.a518c2ef.css.map",
-    "main.d83a8ab0.js.map": "/Crypto-Board/static/js/main.d83a8ab0.js.map",
+    "main.a00c571d.css.map": "/Crypto-Board/static/css/main.a00c571d.css.map",
+    "main.810f9946.js.map": "/Crypto-Board/static/js/main.810f9946.js.map",
     "787.a70fc898.chunk.js.map": "/Crypto-Board/static/js/787.a70fc898.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a518c2ef.css",
-    "static/js/main.d83a8ab0.js"
+    "static/css/main.a00c571d.css",
+    "static/js/main.810f9946.js"
   ]
 }
