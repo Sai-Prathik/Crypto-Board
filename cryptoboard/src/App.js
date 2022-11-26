@@ -4,6 +4,7 @@ import Header from './Header';
 import "./Assets/man.png" ;
 import './Styles/CoinCard.css';
 import './Styles/Carousel.css';
+import './Styles/CoinPage.css';
 import React from 'react'
 import {
   BrowserRouter as Router,

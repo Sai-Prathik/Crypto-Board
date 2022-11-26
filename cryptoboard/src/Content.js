@@ -32,7 +32,7 @@ const  Content = () => {
     
     }/>   
 
-    <Route path="/coin/Bitcoin"  element={<Test/>}/> 
+    <Route path="/coin/:id"  element={<CoinPage/>}/> 
   </Routes>
      </Router>
     </section> 

@@ -1,0 +1,18 @@
+.coinpage-wrap{
+    display: flex;
+    border: solid white;
+    color: white;
+    flex-direction: column;
+    min-height: 184vh;
+}
+
+.coin-description{
+    border: solid white;
+    color: white;
+    min-height: 92vh;
+}
+.coin-charts{
+border: solid white;
+color: white;
+min-height: 92vh;
+}

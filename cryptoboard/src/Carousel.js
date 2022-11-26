@@ -25,11 +25,9 @@ const Carousel=()=> {
       
 useEffect(()=>{  
 
-    get_trending_coins(); 
-    console.log(slide.current.clientWidth);  
+    get_trending_coins();    
     setCarWidth(carousel.current.clientWidth);  
-    setPosDiff(slide.current.clientWidth*0.3); 
-  autoscroll()
+    setPosDiff(slide.current.clientWidth*0.3);  
 
   },[])
 

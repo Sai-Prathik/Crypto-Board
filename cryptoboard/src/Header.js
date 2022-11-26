@@ -38,7 +38,7 @@ const Header = () => {
         
         <Toolbar className={classes.Nav}>
             
-            <Typography className={classes.Title}>CryptoBoard</Typography>
+           <Typography className={classes.Title} >CryptoBoard</Typography> 
              
             <img src={man} className={classes.Logo}/>
 
