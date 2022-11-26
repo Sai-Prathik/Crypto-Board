@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'; 
+import { Link } from 'react-router-dom';
 
 
 
@@ -23,6 +24,7 @@ function CoinCard(props) {
   //price_change_percentage_24h
    
   return (
+    <Link to={`/coin/${props.obj.symbol.toUpperCase()}`}>
   <div className='cc' ref={props.itemRef}> 
 
   <div className='Logo'>
@@ -34,6 +36,7 @@ function CoinCard(props) {
    <div className='perchng' style={get_status()}>{props.obj.price_change_percentage_24h.toFixed(3)}%</div>
    </div>
   </div> 
+  </Link>
   ) 
 }
 

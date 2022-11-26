@@ -10,10 +10,12 @@ const Carousel=()=> {
   const [coins,setTrendingCoins] = useState([]);
   const [carWidth,setCarWidth] = useState(0); 
   const [pos_diff,setPosDiff] = useState(0);
+  const [pos,set_pos] = useState(100);
   const slide = useRef();
   const carousel = useRef();
-  var pos = 0;
-
+  const left = useRef();
+  const right = useRef();
+  
   const get_trending_coins= async()=>{
      const {data} = await axios.get(TrendingCoins("USD"));
      setTrendingCoins(data);
@@ -26,29 +28,55 @@ useEffect(()=>{
     get_trending_coins(); 
     console.log(slide.current.clientWidth);  
     setCarWidth(carousel.current.clientWidth);  
-    setPosDiff(slide.current.clientWidth*0.3);
-
-
+    setPosDiff(slide.current.clientWidth*0.3); 
+  autoscroll()
 
   },[])
 
   function scrollCarousel(direction){ 
      switch(direction){
        case "left":{
-         console.log("left");
+        console.log("left:"+pos)
+        set_pos(pos-100)
+        if(pos<0){
+          set_pos(100)
+        }
+        else{
+          carousel.current.scroll(pos,0); 
+        }
+        
+        break;
+      }
           
-          break;
+
+       case "right":{  
+        set_pos(pos+100) 
+        if(pos>1400){
+          scrollCarousel("reset")
+        }
+        else{
+          carousel.current.scroll(pos,0);
+        }
+         break;
        }
 
-       case "right":{
-         console.log("right"); 
-         break;
+       case "reset":{
+        console.log('reset')
+        set_pos(100)
+        carousel.current.scroll(0,0)
+        break;
        }
      }
      
 
   }
 
+  function autoscroll(){
+     setInterval(function handler(){
+      right.current.click()
+      console.log(pos)
+     },3000)
+  }
    
  
 
@@ -56,18 +84,18 @@ useEffect(()=>{
     <> 
     <div className='car-div'> 
     <div className='car-wrap' ref={slide} >
-     <button type='button' className="dir-btn" onClick={()=>{scrollCarousel("left")}}  >Left</button>
+     <button type='button' className="dir-btn"  ref={left} onClick={()=>{scrollCarousel("left")}}  >Left</button>
     <div className='slide' ref={carousel} >
     
  
         {
           coins.map(function(object,i){
-            return <CoinCard obj={object} key={object.id} />
+            return <CoinCard obj={object}  key={object.id} />
           })
         }
        
     </div>
-     <button type='button' className="dir-btn" onClick={()=>{scrollCarousel("right")}}  >Right</button> 
+     <button type='button' className="dir-btn" ref={right} onClick={()=>{scrollCarousel("right")}}  >Right</button> 
     </div>
     </div>
     </>
