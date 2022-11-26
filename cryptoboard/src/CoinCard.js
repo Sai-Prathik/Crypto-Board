@@ -24,7 +24,7 @@ function CoinCard(props) {
   //price_change_percentage_24h
    
   return (
-    <Link to={`/coin/${props.obj.symbol.toUpperCase()}`}>
+    <Link to={`/coin/${props.obj.name.toLowerCase()}`}>
   <div className='cc' ref={props.itemRef}> 
 
   <div className='Logo'>

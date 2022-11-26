@@ -30,7 +30,7 @@ function CoinRow(props) {
      
     
   return ( 
-    <Link to={`/coin/${coinData.symbol.toUpperCase()}`}> 
+    <Link to={`/coin/${coinData.name.toLowerCase()}`}> 
     <div className='coin-item-wrp' key={coinData.index}>
     <div className='flex'>
 

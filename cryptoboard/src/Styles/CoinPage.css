@@ -9,10 +9,25 @@
 .coin-description{
     border: solid white;
     color: white;
-    min-height: 92vh;
+    min-height: 92vh;  
+    background-image: url("https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579"); 
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position-x: -30%;
+    background-position-y: 50%;
 }
 .coin-charts{
 border: solid white;
 color: white;
 min-height: 92vh;
+}
+
+.c-item1{
+    background-color: black;
+     -webkit-mask-image: linear-gradient(to left,rgb(0,0,0,5), rgb(1,1,1,10),transparent 98%);
+    min-height: 92vh;
+    opacity: 85%;
+    color: white;
+    
+    
 }
