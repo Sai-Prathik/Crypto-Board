@@ -3,8 +3,9 @@
 export const CoinList = (currency,pagination=100) =>
   `https://api.coingecko.com/api/v3/coins/markets?vs_currency=${currency}&order=market_cap_desc&per_page=${pagination}&page=1&sparkline=false`;
 
-export const SingleCoin = (id) =>
-  `https://api.coingecko.com/api/v3/coins/${id}`;
+  export const SingleCoin = (id) =>{ 
+    return `https://api.coingecko.com/api/v3/coins/${id}`;
+  }
 
 export const HistoricalWeekChart = (id, days, currency,interval) =>
   `https://api.coingecko.com/api/v3/coins/${id}/market_chart?vs_currency=${currency}&days=${days}&interval=${interval}`;

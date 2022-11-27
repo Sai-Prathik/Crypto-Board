@@ -1,10 +1,9 @@
 import React, { useRef } from 'react';
 import CoinCard from "./CoinCard"; 
 import axios from "axios";
-import { TrendingCoins } from './Config/API';
-import { useState,useEffect } from 'react';
-import left_arrow from './Assets/left_arrow.svg';
-import "./Styles/Content.css";  
+import { TrendingCoins } from '../../Config/API';
+import { useState,useEffect } from 'react'; 
+import "../../Styles/Content.css";  
 
 const Carousel=()=> {
   const [coins,setTrendingCoins] = useState([]);

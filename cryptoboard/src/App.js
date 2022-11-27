@@ -1,6 +1,6 @@
 import './Styles/App.css';
-import Content from './Content';
-import Header from './Header';
+import Content from "./Components/Content"
+import Header from './Components/Header';
 import "./Assets/man.png" ;
 import './Styles/CoinCard.css';
 import './Styles/Carousel.css';

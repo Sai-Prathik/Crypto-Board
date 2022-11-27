@@ -1,9 +1,9 @@
 import React from 'react';
-import logo from './Assets/CBLogo.png';
+import logo from '../Assets/CBLogo.png';
 import {AppBar,Container, ListItem, MenuItem, Select, Toolbar,Typography} from "@material-ui/core";
 import { makeStyles } from '@material-ui/core'; 
-import SearchBar from './SearchBar';
-import man from "./Assets/man.png";
+import SearchBar from './HomePage/SearchBar';
+import man from "../Assets/man.png";
 import { Link } from 'react-router-dom';
 
 const Header = () => {

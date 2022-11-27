@@ -1,7 +1,7 @@
 import React from 'react'
-import Carousel from './Carousel'; 
-import CoinsTable from './CoinsTable';
-import "./Styles/Content.css";
+import Carousel from './HomePage/Carousel'; 
+import CoinsTable from './HomePage/CoinsTable';
+import "./../Styles/Content.css";
 import Test from "./Test";
 import {
   BrowserRouter as Router,
@@ -10,8 +10,8 @@ import {
   Link,
   useParams
 } from "react-router-dom";
-import coinId from "./CoinPage"; 
-import CoinPage from "./CoinPage";
+import coinId from "./CoinPage/CoinPage"; 
+import CoinPage from "./CoinPage/CoinPage";
 
 
 

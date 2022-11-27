@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'; 
-import "./Styles/CoinsTable.css";
+import "../../Styles/CoinsTable.css";
 import {Line} from "react-chartjs-2";
-import { HistoricalWeekChart } from './Config/API';
+import { HistoricalWeekChart } from '../../Config/API';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
@@ -9,8 +9,7 @@ function CoinRow(props) {
     var coinData = props.data; 
 
     const [weekHistory,setWeekData] = useState({});
-    const [data,setData] = useState({});
-    
+    const [data,setData] = useState({}); 
     
     function customizeData(data){
         let prices = [];
@@ -30,7 +29,7 @@ function CoinRow(props) {
      
     
   return ( 
-    <Link to={`/coin/${coinData.name.toLowerCase()}`}> 
+    <Link to={`/coin/${coinData.id}`}> 
     <div className='coin-item-wrp' key={coinData.index}>
     <div className='flex'>
 

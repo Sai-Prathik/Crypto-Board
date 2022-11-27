@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import "./Styles/CoinsTable.css";
+import "../../Styles/CoinsTable.css";
 import {Line} from "react-chartjs-2";
-import SearchBar from './SearchBar';
-import { CoinList, get_price, HistoricalWeekChart, SingleCoin } from './Config/API';
+import SearchBar from '../HomePage/SearchBar';
+import { CoinList, get_price, HistoricalWeekChart, SingleCoin } from '../../Config/API';
 import axios from 'axios'; 
 import CoinRow from './CoinRow';
-import { searchCoins } from './Config/API';
+import { searchCoins } from '../../Config/API';
 
  
 
